@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 
 const myVar = "mi variable"
@@ -16,7 +17,7 @@ export default function FirstApp({ name, number }) {
     <>
       <h1>Props</h1>
       <div>Hola { name }, tu número es { number }</div>
-      <div>Y tu número multiplicado por 2 es { number*2 }</div>
+      <div>Y tu número multiplicado + 2 es { number+2 }</div>
 
 
       <h1>Fragment</h1>
@@ -33,4 +34,9 @@ export default function FirstApp({ name, number }) {
 
     </>
   )
+}
+
+FirstApp.propTypes = {
+  name: PropTypes.string.isRequired,
+  number: PropTypes.number.isRequired
 }
