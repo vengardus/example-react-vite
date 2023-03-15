@@ -40,3 +40,8 @@ FirstApp.propTypes = {
   name: PropTypes.string.isRequired,
   number: PropTypes.number.isRequired
 }
+
+FirstApp.defaultProps = {
+  name: 'Invitado',
+  number: 10
+}

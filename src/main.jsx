@@ -5,6 +5,9 @@ import './styles.css'
 
 ReactDOM.createRoot( document.getElementById('root' ) ).render(
     <React.StrictMode>
-        <FirstApp name='Gardus' number={ 27 } />
+        {/* <FirstApp name='Gardus' number={ 27 } /> */}
+        
+        {/* Ejemplo para default Props */}
+        <FirstApp  />
     </React.StrictMode>
 )
