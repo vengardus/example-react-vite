@@ -2,3 +2,8 @@ html, body {
     background-color: blueviolet;
     color: white;
 }
+
+button {
+    padding: 15px;
+    font-size: 1.5rem;
+}
