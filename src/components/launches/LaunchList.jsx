@@ -9,7 +9,7 @@ import logo from "../../assets/img/logo.png"
 import { LaunchItem } from "./LaunchItem";
 
 
-export const AppLaunches = () => {
+export const LaunchList = () => {
   const [launches, setLaunches] = useState([])
 
   useEffect(() => {

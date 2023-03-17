@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import dayjs from 'dayjs'
 import { HiCalendar } from "react-icons/hi";
 import {
@@ -48,13 +49,15 @@ export const LaunchItem = ( launch ) => {
         </Text>
       </Flex>
 
-      <Button
-        colorScheme="purple"
-        mt="2"
-        ml="4"
-      >
-        More details
-      </Button>
+      <Link to={`/launch/${launch.flight_number}`}>
+        <Button
+          colorScheme="purple"
+          mt="2"
+          ml="4"
+          >
+          More details
+        </Button>
+      </Link>
 
     </Box>
   )

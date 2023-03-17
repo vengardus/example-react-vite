@@ -19,3 +19,5 @@ $ yarn add react-icons
 ## Install dayjs (formato de fechas, ligero)
 $ yarn add dayjs
 
+## Install react router
+$ yarn add react-router-dom
