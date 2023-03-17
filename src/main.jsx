@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import { ChakraProvider } from '@chakra-ui/react'
 // import { CounterApp } from "./components/CounterApp";
 // import FirstApp from "./components/FirstApp";
-import { AppLaunches } from "./components/AppLaunches";
+import { AppLaunches } from "./components/launches/AppLaunches";
 import './assets/css/styles.css'
 
 
