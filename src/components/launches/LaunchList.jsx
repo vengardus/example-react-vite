@@ -13,6 +13,9 @@ const API_URL = 'https://api.spacexdata.com/v3/launches'
 export const LaunchList = () => {
   const [ launches, loading ] = useFetch(API_URL)
 
+  // document.body.style.backgroundColor='black'
+  // document.body.style.color='white'
+
   return (
     <>
       <Box mx="4rem">

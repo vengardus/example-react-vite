@@ -21,3 +21,7 @@ $ yarn add dayjs
 
 ## Install react router
 $ yarn add react-router-dom
+
+## Install react-player
+$ yarn add react-player
+

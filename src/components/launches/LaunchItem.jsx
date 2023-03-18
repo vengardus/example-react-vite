@@ -52,7 +52,7 @@ export const LaunchItem = ( launch ) => {
 
       <Link to={`/launch/${launch.flight_number}`}>
         <Button
-          colorScheme="purple"
+          colorScheme="orange"
           mt="2"
           ml="4"
           >
