@@ -1,15 +1,15 @@
 import { useContext, createContext, useState } from "react";
 
-const UserContext = createContext( undefined )
+export const UserContext = createContext( undefined )
 
-export const UserProvider = ( { children } ) => {
-    console.log('ed')
-    const [ user ] = useState( {
+export const UserProvider = ( { children, course } ) => {
+    const [ user, setUser ] = useState( {
         name: 'Gardus',
         email: 'gardus@gmail.com',
     })
-    console.log('ed2', user)
-    return <UserContext.Provider value={ user }>{ children }</UserContext.Provider>
+    // const [ course, setCourse ] = useState(_course)
+    
+    return <UserContext.Provider value={ {user, course} }>{ children }</UserContext.Provider>
 }
 
 export const useUser = () => useContext( UserContext )

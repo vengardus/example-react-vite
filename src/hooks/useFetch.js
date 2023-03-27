@@ -30,6 +30,7 @@ export const useFetch = ( url ) => {
         getFetch( url )
             .then( data => {
                 if ( data.status !== 0 ) {
+                    console.log('data', data.data)
                     setData( data.data )
                     setLoading( false )
                 }

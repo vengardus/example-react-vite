@@ -2,9 +2,12 @@ import { useUser } from "./UserContext"
 
 
 export const LoggedInUser = () => {
-    const user = useUser()
+    const values = useUser()
 
     return (
-        <div>Hello <strong>{ user.name }</strong></div>
+        <>
+            <div>Hello <strong>{values.user.name}</strong></div>
+            <div>Del curso de <strong>{values.course}</strong></div>
+        </>
     )
 }
