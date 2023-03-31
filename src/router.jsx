@@ -8,6 +8,9 @@ import { UserProvider } from "./components/blog/UserContext";
 import { Goal } from "./components/goal/Goal";
 import Alice01 from "./containers/pages/alice01";
 import Alice02 from "./containers/pages/alice02";
+import { Alice03 } from "./containers/pages/alice03";
+import ProductDetails from "./components/alice03/ProductDetail";
+
 
 
 export const router = createBrowserRouter([
@@ -45,6 +48,15 @@ export const router = createBrowserRouter([
     {
         path: "alice02",
         element: <Alice02 />,
+    },
+    {
+        path: "alice03",
+        element: <Alice03 />,
+    },
+    {
+        path: "product/:id",
+        element:       
+        <ProductDetails />,
         errorElement: <ErrorPage />,
     },
 ]);

@@ -7,22 +7,8 @@ import { useFetch } from '../../hooks/useFetch';
 const API_URL = 'https://dummyjson.com/products'
 
 function Alice02() {
-    //   const [products, setProducts] = useState([]);
     const [selectedProduct, setSelectedProduct] = useState(null);
-
-    const [products, loading] = useFetch(API_URL)
-
-    //   useEffect(() => {
-    //     const getProducts = async () => {
-    //         try {
-    //           const products = await apiProducts();
-    //           setProducts(products);
-    //         } catch (error) {
-    //           console.log(error);
-    //         }
-    //       };
-    //       getProducts();
-    //   }, []);
+    const [products, loading, error] = useFetch(API_URL)
 
     const handleProductClick = (product) => {
         setSelectedProduct(product);
@@ -36,6 +22,9 @@ function Alice02() {
         <>
             {(loading)
                 ? <div>Loading...</div>
+                :
+                ( error )
+                ? <div>Ocurrió un Error: {error}</div>
                 :
                 <div>
                     {selectedProduct ? (

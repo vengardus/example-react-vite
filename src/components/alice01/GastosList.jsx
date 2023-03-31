@@ -5,7 +5,7 @@ const GastosList = () => {
 
   return (
     <ul>
-      {gastos.map((gasto, index) => (
+      {gastos?.map((gasto, index) => (
         <li key={index}>
           <strong>{gasto.category}</strong>: ${gasto.total}
         </li>

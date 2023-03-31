@@ -17,7 +17,7 @@ const ProductList = ({ products, onProductClick }) => {
         </tr>
       </thead>
       <tbody>
-        {products?.map(product => (
+        {products.map(product => (
           <tr key={product.id} onClick={() => onProductClick(product)}>
             <td>{product.id}</td>
             <td>{product.title}</td>

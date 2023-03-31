@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 
-const getFetch = async ( url ) => {
+const getFetch = async (url) => {
     let response = {
         data: null,
         status: 0,
@@ -13,29 +13,30 @@ const getFetch = async ( url ) => {
         response.data = await resp.json()
         response.status = resp.status
     }
-    catch ( error ) {
-        console.log( 'Error:', error )
-        response.error = error
+    catch (error) {
+        console.log('Error!:', error.message)
+        response.error = error.message
     }
-
     return response
 }
 
-export const useFetch = ( url ) => {
-    const [ data, setData ] = useState( null )
-    const [ loading, setLoading ] = useState( true )
+export const useFetch = (url) => {
+    const [data, setData] = useState(null)
+    const [loading, setLoading] = useState(true)
+    const [error, setError] = useState(null)
+    const [status, setStatus] = useState(0)
 
     // useEffect no debe ser async
-    useEffect( () => {
-        getFetch( url )
-            .then( data => {
-                if ( data.status !== 0 ) {
-                    console.log('data', data.data)
-                    setData( data.data )
-                    setLoading( false )
-                }
-            }) 
-    }, [ url ])
+    useEffect(() => {
+        getFetch(url)
+            .then(response => {
+                setData(response.data)
+                setLoading(false)
+                setError(response.error)
+                setStatus(response.status)
+            })
 
-    return [ data, loading ]
+    }, [url])
+
+    return [data, loading, error, status]
 }
