@@ -1,6 +1,6 @@
 import React from 'react'
 import { Layout } from '../components/ui/Layout'
-import ProductDetails from '../components/products/ProductDetail'
+// import ProductDetails from '../components/products/ProductDetail'
 import { useParams } from 'react-router-dom'
 
 export const ProductDetailPage = () => {
@@ -10,7 +10,7 @@ export const ProductDetailPage = () => {
 
     return (
         <Layout>
-            <ProductDetails id={ id } />
+            {/* <ProductDetails id={ id } /> */}
         </Layout>
     )
 }

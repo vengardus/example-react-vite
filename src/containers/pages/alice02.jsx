@@ -18,6 +18,8 @@ function Alice02() {
         setSelectedProduct(null);
     };
 
+    console.log('alice02')
+
     return (
         <>
             {(loading)

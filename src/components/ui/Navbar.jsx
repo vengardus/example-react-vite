@@ -18,7 +18,7 @@ export const Navbar = () => {
   const toggleMenu = () => {
     setShowSmallSubMenu(!showSmallSubMenu);
   };
-  console.log('isMobile', isMobile)
+  // console.log('isMobile', isMobile)
 
 
   return (

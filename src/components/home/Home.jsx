@@ -8,11 +8,11 @@ export const Home = () => {
     <section className="flex flex-col pt-3 space-y-4">
       <div className="flex text-3xl font-bold justify-center">{title}</div>
 
-      <div class="flex flex-wrap flex-col md:flex-row space-y-3 md:space-y-0">
+      <div className="flex flex-wrap flex-col md:flex-row space-y-3 md:space-y-0">
 
         {
           options.map(option => (
-            <div className="flex-none w-full md:w-1/2">
+            <div key={option.name} className="flex-none w-full md:w-1/2">
               <Link to={ option.href }>
                 <div className="flex flex-col p-3 md:p-4 border-2 my-2 mx-3 border-gray-500 rounded-xl bg-gray-200 hover:bg-gray-100 space-y-2">
                   <div className="text-2xl font-bold">App: <strong className="underline underline-offset-4">{option.title}</strong></div>
