@@ -1,89 +1,98 @@
-html, body {
-    background-color: white;
-    color: black;
+html,
+body {
+  background-color: white;
+  color: black;
 }
 
 button {
-    padding: 0.5px; 
-    font-size: 1rem;
-    margin-right: 0.5rem;
+  padding: 0.5px;
+  font-size: 1rem;
+  margin-right: 0.5rem;
 }
 
 input {
-    border: 1px solid black;
-    width: 7rem;
+  border: 1px solid black;
+  width: 7rem;
 }
 
 .input_number {
-    text-align: end;
-    padding-right: 7px;
+  text-align: end;
+  padding-right: 7px;
 }
 
 .btn_option {
-    background-color: orange;
-    font-size: 1rem;
-    margin-right: .5rem;
-    padding: 5px 7px ;
+  background-color: orange;
+  font-size: 1rem;
+  margin-right: .5rem;
+  padding: 5px 7px;
 }
 
 .box {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .title {
-    margin-bottom: 1rem;
-    font-size: 2rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
 }
 
 
 /* by Alice */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+button {
+  background-color: #0077ff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #005ce6;
+}
+
+.footer-logo {
+  display: block;
+  margin: auto auto;
+  padding: auto;
+  width: 50%;
+  height: 80%;
   
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-  }
-  
-  th {
-    background-color: #eee;
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: left;
-  }
-  
-  td {
-    border: 1px solid #ccc;
-    padding: 10px;
-  }
-  
-  img {
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-  }
-  
-  button {
-    background-color: #0077ff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  button:hover {
-    background-color: #005ce6;
-  }
-  
+}

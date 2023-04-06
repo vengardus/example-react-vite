@@ -9,20 +9,29 @@ import { Goal } from "./components/goal/Goal";
 import Alice01 from "./containers/pages/alice01";
 import Alice02 from "./containers/pages/alice02";
 import { Alice03 } from "./containers/pages/alice03";
-import ProductDetails from "./components/alice03/ProductDetail";
+import { ProductDetailPage } from "./components/alice03/ProductDetailPage";
+import { LaunchesPage } from "./pages/LaunchesPage";
+import { HomePage } from "./pages/HomePage";
+import { LaunchDetailPage } from "./pages/LaunchDetailPage";
+
 
 
 
 export const router = createBrowserRouter([
     {
         path: "/",
-        element: <LaunchList />,
+        element: <HomePage />,
         errorElement: <ErrorPage />,
         
     },
     {
+        path: "launches",
+        element: <LaunchesPage />,
+        errorElement: <ErrorPage />,
+    },
+    {
         path: "launch/:id",
-        element: <LaunchDetail />,
+        element: <LaunchDetailPage />,
         errorElement: <ErrorPage />,
     },
     {
@@ -55,8 +64,7 @@ export const router = createBrowserRouter([
     },
     {
         path: "product/:id",
-        element:       
-        <ProductDetails />,
+        element: <ProductDetailPage/>,
         errorElement: <ErrorPage />,
     },
 ]);

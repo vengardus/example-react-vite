@@ -1,10 +1,9 @@
-import { configureStore, createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+
 
 export const fetchProducts = createAsyncThunk('products/fetchProducts', async () => {
-    console.log('GARDI')
   const response = await fetch('https://dummyjson.com/products');
   const data = await response.json();
-  console.log(data)
   return data.products;
 });
 
@@ -26,6 +25,3 @@ export const productsSlice = createSlice({
       });
   },
 });
-
-
-// export default productsSlice.reducer;

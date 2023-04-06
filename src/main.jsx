@@ -8,15 +8,15 @@ import { router } from "./router";
 // import { ThemeProvider } from "./hooks/useTheme";
 import { Provider } from 'react-redux';
 import store from './store';
+import './assets/css/index.css'
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        {/* <UserProvider> */}
         <Provider store={store}>
             <ChakraProvider>
                 <RouterProvider router={router} />
             </ChakraProvider>
         </Provider>
-        {/* </UserProvider> */}
     </React.StrictMode>
 )

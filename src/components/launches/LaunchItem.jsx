@@ -1,65 +1,46 @@
 import { Link } from "react-router-dom";
 import dayjs from 'dayjs'
 import { HiCalendar } from "react-icons/hi";
-import {
-  Box,
-  Tag,
-  Flex,
-  Text,
-  Spacer,
-  Icon,
-  Button
-} from '@chakra-ui/react'
 
 
-export const LaunchItem = ( launch ) => {
+export const LaunchItem = (launch) => {
   return (
-    <Box
-      bg="gray.100"
-      m="4"
-      p="4"
-      borderRadius="lg"
-    >
-      <Flex px="1rem">
-        <Text fontSize="xl" py="0.5rem">
+    <div className="flex bg-gray-100 mb-4 py-3 rounded-xl px-3" >
+
+      <div className="flex flex-col basis-4/5  space-y-2">
+        <div className="text-2xl">
           Mission <strong >{launch.mission_name}</strong> ( {launch.launch_year} )
-        </Text>
+        </div>
 
-        <Spacer />
+        <div className="flex flex-row">
+          <HiCalendar className="text-red-500 mr-3" />
+          <div className="text-gray-500">
+            {
+              dayjs(launch.launch_date_local)
+                .locale('es')
+                .format('D MMMM, YYYY')
+            }
+          </div>
+        </div>
 
-        <Tag
-          colorScheme={launch.launch_success ? 'green' : 'red'}
-          px="5"
-          py="1"
+        <Link to={`/launch/${launch.flight_number}`}>
+          <button className="bg-orange-500 text-white py-1 px-2">
+            More details
+          </button>
+        </Link>
+
+      </div>
+
+      <div className="flex basis-1/5 justify-end items-center">
+        <div 
+          className= {`text-white w-32 h-16 flex items-center justify-center 
+            ${launch.launch_success? 'bg-green-500' : 'bg-red-500'}`}
         >
           {launch.launch_success ? 'Success' : 'Failure'}
-        </Tag>
-      </Flex>
+        </div>
+      </div>
 
-      <Flex align="center" ml="1rem">
-        <Icon as={HiCalendar} color="gray.500" fontSize="sm" />
-        <Text 
-          size="sm" 
-          ml="0.5rem"
-          color="gray.500">
-          {
-            dayjs(launch.launch_date_local)
-              .locale('es')
-              .format('D MMMM, YYYY')
-          } 
-        </Text>
-      </Flex>
 
-      <Link to={`/launch/${launch.flight_number}`}>
-        <Button
-          colorScheme="orange"
-          mt="2"
-          ml="4"
-          >
-          More details
-        </Button>
-      </Link>
-
-    </Box>
+    </div>
   )
 }

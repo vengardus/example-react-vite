@@ -1,14 +1,12 @@
-import React from 'react';
-import { Provider } from 'react-redux';
-import store from '../../store';
 import { ProductList } from '../../components/alice03/ProductList';
+import { Layout } from '../../components/ui/Layout';
 
 
 export const Alice03 = () => {
   return (
-    <div>
-        <ProductList />
-    </div>
+    <Layout >
+      <ProductList />
+    </Layout>
   );
 }
 

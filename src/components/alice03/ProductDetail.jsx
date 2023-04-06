@@ -1,14 +1,13 @@
 import { useParams, Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
-const ProductDetails = () => {
-  const { id } = useParams();
-  const { products } = useSelector(state => state.products);
-  console.log('PRODUCTSS!!', products)
-  console.log('id!!', typeof(id))
-  const product = products.find(p => p.id === parseInt(id));
-  console.log('PRODUCT!!', product)
 
+const ProductDetails = ( { id } ) => {
+  // const { id } = useParams();
+  const { products } = useSelector(state => state.products);
+  console.log('XXX', id, typeof(id), products)
+  const product = products.find(p => p.id === parseInt(id));
+  console.log('PROD', product)
   return (
     <div>
       <h1>{product?.title}</h1>
