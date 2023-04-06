@@ -25,3 +25,7 @@ $ yarn add react-router-dom
 ## Install react-player
 $ yarn add react-player
 
+## Install y configurar tailwind (reemṕlaza a chakra-ui )
+https://tailwindcss.com/docs/guides/vite
+
+

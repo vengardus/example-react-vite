@@ -13,7 +13,7 @@ export const Home = () => {
         {
           options.map(option => (
             <div className="flex-none w-full md:w-1/2">
-              <Link to='/launches'>
+              <Link to={ option.href }>
                 <div className="flex flex-col p-3 md:p-4 border-2 my-2 mx-3 border-gray-500 rounded-xl bg-gray-200 hover:bg-gray-100 space-y-2">
                   <div className="text-2xl font-bold">App: <strong className="underline underline-offset-4">{option.title}</strong></div>
                   <div className="text-xl font-bold">Descripción:</div>

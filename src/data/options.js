@@ -9,12 +9,12 @@ export const options = [
         image: null
     },
     {
-        name: 'Launches',
-        href: '/launches',
+        name: 'Productos',
+        href: '/products',
         icon: null,
-        title: 'Launches',
-        description: 'Muestra un listado de los lanzamientos de cohetes de SpaceX obtenidos desde su Api https://api.spacexdata.com/v3/launches, además muestra el detalle del lanzamiento seleccionado.',
-        detail: 'La lógica del fetch está en un hook génerico que recibe la url como parámetro.',
+        title: 'Productos',
+        description: 'Muestra un listado de productos obtenidos de la Api https://dummyjson.com/products , al seleccionar muestra mas datos del producto. ',
+        detail: 'La lógica del fetch se maneja con createAsyncThunk del paquete reduxjs/toolkit.',
         image: null
     },
 ]

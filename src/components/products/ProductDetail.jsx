@@ -14,7 +14,7 @@ const ProductDetails = ( { id } ) => {
       <p>{product?.description}</p>
       <p>{product?.price}</p>
       <img src={product?.thumbnail} alt={product.title} />
-      <Link to="/alice03">Volver al listado</Link>
+      <Link to="/products">Volver al listado</Link>
     </div>
   );
 };
