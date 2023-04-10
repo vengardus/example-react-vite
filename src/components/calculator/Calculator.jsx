@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from "react"
-import { Box, Flex } from "@chakra-ui/react"
 
 
 export const Calculator = () => {
@@ -41,8 +40,8 @@ export const Calculator = () => {
     <form>
       <h1 className="title">Simplest Working Calculator </h1>
 
-      <Box mx={4}>
-        <Flex direction={"column"}>
+      <div className="m-4">
+        <div className="flex flex-col">
           <p ref={resultRef}>Result: {result}</p>
 
           <input
@@ -61,8 +60,8 @@ export const Calculator = () => {
             <button onClick={(e) => handleOption(e, 'resetInput')} className="btn_option">Reset Input</button>
             <button onClick={(e) => handleOption(e, 'resetResult')} className="btn_option">Reset Result</button>
           </div>
-        </Flex>
-      </Box>
+        </div>
+      </div>
 
     </form>
   )

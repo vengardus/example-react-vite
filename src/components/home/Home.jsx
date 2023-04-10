@@ -4,8 +4,10 @@ import { options } from "../../data/options"
 
 export const Home = () => {
   const title = 'Aplicativos desarrollados en ReactJs'
+  
   return (
     <section className="flex flex-col pt-3 space-y-4">
+
       <div className="flex text-3xl font-bold justify-center">{title}</div>
 
       <div className="flex flex-wrap flex-col md:flex-row space-y-3 md:space-y-0">
@@ -25,17 +27,7 @@ export const Home = () => {
             </div>
           ))
         }
-
       </div>
-
-
-
-      {/* {options.map(option => (
-          <div>
-            {option.title}
-          </div>
-        ))
-        } */}
 
     </section >
   )

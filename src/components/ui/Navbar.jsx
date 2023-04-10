@@ -10,16 +10,13 @@ export const Navbar = () => {
 
   const isMobile = useMediaQuery({ maxWidth: 767 });
 
-  function toggleDropdown() {
+  const toggleDropdown = () =>  {
     setShowSubMenu(!showSubMenu);
   }
-
 
   const toggleMenu = () => {
     setShowSmallSubMenu(!showSmallSubMenu);
   };
-  // console.log('isMobile', isMobile)
-
 
   return (
     <nav className="flex items-center justify-between flex-wrap bg-gray-800 px-3">

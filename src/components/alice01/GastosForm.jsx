@@ -1,6 +1,6 @@
-import { useState, useRef } from 'react';
+import { useRef } from 'react';
 import { useDispatch } from 'react-redux';
-import { agregarGasto } from '../../redux/gastosSlice';
+import { agregarGasto } from './gastosSlice';
 
 
 const GastosForm = () => {

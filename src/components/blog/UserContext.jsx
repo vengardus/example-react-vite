@@ -7,9 +7,21 @@ export const UserProvider = ( { children, course } ) => {
         name: 'Gardus',
         email: 'gardus@gmail.com',
     })
-    // const [ course, setCourse ] = useState(_course)
+
+    const updateUsername = (newUsername) => {
+        // solo para probar cambio de nombre
+        newUsername = (user.name == 'Ed' )? 'Gardo' : newUsername
+        setUser((currentUser) => ({
+          ...currentUser,
+          name: newUsername
+        }));
+      };
     
-    return <UserContext.Provider value={ {user, course} }>{ children }</UserContext.Provider>
+    return (
+        <UserContext.Provider value={ {user, updateUsername, course } }>
+            { children }
+        </UserContext.Provider>
+    )
 }
 
 export const useUser = () => useContext( UserContext )

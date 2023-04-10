@@ -1,5 +1,3 @@
-
-
 export const ProductDetail = ( { product, onBackToListClick } ) => {
   console.log('detail', product)
   return (

@@ -1,18 +1,16 @@
 import { createBrowserRouter } from "react-router-dom";
 import { ErrorPage } from "./components/errors/errorPage";
-import { Calculator } from "./components/calculator/Calculator";
-import { Blog } from "./components/blog/Blog";
-import { UserProvider } from "./components/blog/UserContext";
-import { Goal } from "./components/goal/Goal";
-import Alice01 from "./containers/pages/alice01";
-import Alice02 from "./containers/pages/alice02";
 import { ProductsPage } from "./pages/ProductsPage";
-import { ProductDetailPage } from "./pages/ProductDetailPage";
 import { LaunchesPage } from "./pages/LaunchesPage";
 import { HomePage } from "./pages/HomePage";
 import { LaunchDetailPage } from "./pages/LaunchDetailPage";
-
-
+import { CalculatorPage } from "./pages/CalculatorPage";
+import { BlogPage } from "./pages/BlogPage";
+import { GoalsPage } from "./pages/GoalsPage";
+import { Alice01Page } from "./pages/Alice01Page";
+import { Alice02Page } from "./pages/Alice02Page";
+import { PortafolioPage } from "./pages/PortafolioPage";
+import { TictactoePage } from "./pages/TictactoePage";
 
 
 export const router = createBrowserRouter([
@@ -23,46 +21,50 @@ export const router = createBrowserRouter([
         
     },
     {
-        path: "launches",
+        path: "/launches",
         element: <LaunchesPage />,
         errorElement: <ErrorPage />,
     },
     {
-        path: "launch/:id",
+        path: "/launch/:id",
         element: <LaunchDetailPage />,
         errorElement: <ErrorPage />,
     },
     {
-        path: "calculator",
-        element: <Calculator />,
+        path: "/calculator",
+        element: <CalculatorPage />,
         errorElement: <ErrorPage />,
     },
     {
-        path: "blog",
-        element: <UserProvider course='React'><Blog /></UserProvider>,
+        path: "/blog",
+        element: <BlogPage />,
         errorElement: <ErrorPage />,
     },
     {
-        path: "goal",
-        element: <Goal />,
+        path: "/goals",
+        element: <GoalsPage />,
         errorElement: <ErrorPage />,
     },
     {
-        path: "alice01",
-        element: <Alice01 />,
+        path: "/alice01",
+        element: <Alice01Page />,
         errorElement: <ErrorPage />,
     },
     {
-        path: "alice02",
-        element: <Alice02 />,
+        path: "/alice02",
+        element: <Alice02Page />,
     },
     {
-        path: "products",
+        path: "/products",
         element: <ProductsPage />,
     },
     {
-        path: "product/:id",
-        element: <ProductDetailPage/>,
-        errorElement: <ErrorPage />,
+        path: "/portafolio",
+        element: <PortafolioPage />,
     },
+    {
+        path: "/tictactoe",
+        element: <TictactoePage />
+    },
+    
 ]);

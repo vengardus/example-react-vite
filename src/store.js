@@ -1,7 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit';
-import gastosReducer from './redux/gastosSlice';
-import { productsSlice } from './redux/productsSlice';
-// import productsReducer from './redux/productsSlice'
+import gastosReducer from './components/alice01/gastosSlice';
+import { productsSlice } from './components/products/productsSlice';
+
 
 export default configureStore({
   reducer: {

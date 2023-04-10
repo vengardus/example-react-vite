@@ -1,29 +1,4 @@
-// import { useEffect } from 'react';
-// import { useSelector, useDispatch } from 'react-redux';
-// import { fetchProducts } from '../../redux/productsSlice';
-// import { Link } from 'react-router-dom';
-
 export const ProductList = ( { products, onProductClick } ) => {
-  // const dispatch = useDispatch();
-  // const [selectedProduct, setSelectedProduct] = useState(null);
-  // const { products, isLoading } = useSelector(state => state.products);
-
-  // const handleProductClick = (product) => {
-  //   setSelectedProduct(product);
-  // };
-
-  // const handleBackToListClick = () => {
-  //   setSelectedProduct(null);
-  // };
-
-  // useEffect(() => {
-  //   dispatch(fetchProducts());
-  // }, [dispatch]);
-
-  // if (isLoading) {
-  //   return <p>Loading...</p>;
-  // }
-
   return (
     <>
       <div className="flex justify-center items-center bg-gray-100 mb-3">
