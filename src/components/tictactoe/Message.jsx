@@ -1,16 +1,27 @@
+import { Modal } from "./Modal";
+
+
 export const Message = ({ winner, player, isTie, handleRestart }) => {
     if (winner) {
       return (
         <div className="message">
-          <p className={ winner }>Ganador: {winner}</p>
-          <button onClick={handleRestart}>Volver a jugar</button>
+          <Modal 
+            msgText={ `Ganador: ${winner}` } 
+            msgButton='Reiniciar partida.'
+            className={ winner } 
+            handleRestart={ handleRestart } 
+          />
         </div>
       );
     } else if ( isTie() ) {
       return (
         <div className="message">
-          <p>Empate</p>
-          <button onClick={handleRestart}>Volver a jugar</button>
+           <Modal 
+            msgText='Empate'
+            msgButton='Volver a jugar.'
+            className='' 
+            handleRestart={ handleRestart } 
+          />
         </div>
       );
     } else {
