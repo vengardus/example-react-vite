@@ -1,7 +1,7 @@
-import { useRef } from 'react';
+import { useRef } from 'react'
 
 const ProductList = ({ products, onProductClick }) => {
-  const imgRef = useRef(null);
+  const imgRef = useRef(null)
 
   console.log('products', products)
 
@@ -28,7 +28,7 @@ const ProductList = ({ products, onProductClick }) => {
         ))}
       </tbody>
     </table>
-  );
-};
+  )
+}
 
-export default ProductList;
+export default ProductList

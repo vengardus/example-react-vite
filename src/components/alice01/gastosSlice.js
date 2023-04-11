@@ -1,15 +1,15 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from '@reduxjs/toolkit'
 
 export const gastosSlice = createSlice({
   name: 'gastos',
   initialState: [],
   reducers: {
     agregarGasto: (state, action) => {
-      state.push(action.payload);
-    },
-  },
-});
+      state.push(action.payload)
+    }
+  }
+})
 
-export const { agregarGasto } = gastosSlice.actions;
+export const { agregarGasto } = gastosSlice.actions
 
-export default gastosSlice.reducer;
+export default gastosSlice.reducer

@@ -38,6 +38,7 @@ export const Navbar = () => {
           </svg>
         </button>
       </div>
+      {/* Menu */}
       <div className='w-full block flex-grow md:flex md:items-center md:w-auto md:justify-end'>
         <div className={`text-sm md:flex-grow  ${showSmallSubMenu ? 'block' : 'hidden md:block'}`}>
           <Link
@@ -66,6 +67,8 @@ export const Navbar = () => {
           </div>
         </div>
       </div>
+      {/* Glosa */}
+      <h1 className='mr-7 text-gray-100 text-2xl font-serif hidden md:block'>Mi Portafolio</h1>
     </nav>
   )
 }

@@ -1,7 +1,7 @@
-import { useSelector } from 'react-redux';
+import { useSelector } from 'react-redux'
 
 const GastosList = () => {
-  const gastos = useSelector((state) => state.gastos);
+  const gastos = useSelector((state) => state.gastos)
 
   return (
     <ul>
@@ -11,7 +11,7 @@ const GastosList = () => {
         </li>
       ))}
     </ul>
-  );
-};
+  )
+}
 
-export default GastosList;
+export default GastosList

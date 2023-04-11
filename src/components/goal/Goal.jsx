@@ -1,5 +1,4 @@
-import { useState } from "react"
-
+import { useState } from 'react'
 
 const GoalForm = (props) => {
   const [formData, setFormData] = useState({ goal: '', by: '' })
@@ -19,16 +18,16 @@ const GoalForm = (props) => {
       <h1>My little List of Goals</h1>
       <form onSubmit={submitHandler}>
         <input
-          type="text"
-          name="goal"
-          placeholder="Goal"
+          type='text'
+          name='goal'
+          placeholder='Goal'
           value={formData.goal}
           onChange={changeHandler}
         />
         <input
-          type="text"
-          name="by"
-          placeholder="By"
+          type='text'
+          name='by'
+          placeholder='By'
           value={formData.by}
           onChange={changeHandler}
         />
@@ -60,7 +59,7 @@ export const Goal = () => {
   }
 
   return (
-    <div className="">
+    <div className=''>
       <GoalForm onAdd={addGoal} />
       <ListOfGoals allGoals={allGoals} />
     </div>

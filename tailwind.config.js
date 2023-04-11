@@ -1,13 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    './index.html',
+    './src/**/*.{js,ts,jsx,tsx}'
   ],
   theme: {
     extend: {
       fontFamily: {
-        serif: ['Lora', 'serif'],
+        serif: ['Lora', 'serif']
       },
       colors: {
         beige: '#f7f3e9',
@@ -21,14 +21,13 @@ export default {
           600: '#4b5563',
           700: '#374151',
           800: '#1f2937',
-          900: '#111827',
+          900: '#111827'
         },
         red: {
-          500: '#ef4444',
-        },
-      },
-    },
+          500: '#ef4444'
+        }
+      }
+    }
   },
-  plugins: [],
+  plugins: []
 }
-

@@ -1,8 +1,8 @@
-export const ProductList = ( { products, onProductClick } ) => {
+export const ProductList = ({ products, onProductClick }) => {
   return (
     <>
-      <div className="flex justify-center items-center bg-gray-100 mb-3">
-        <h1 className="text-3xl font-bold text-gray-800">Listado de Productos</h1>
+      <div className='flex justify-center items-center bg-gray-100 mb-3'>
+        <h1 className='text-3xl font-bold text-gray-800'>Listado de Productos</h1>
       </div>
 
       <table>
@@ -26,7 +26,7 @@ export const ProductList = ( { products, onProductClick } ) => {
                 <img src={product.thumbnail} alt={product.title} />
               </td>
               <td>
-                <button onClick={ () =>  onProductClick(product) }> Ver detalles</button>
+                <button onClick={() => onProductClick(product)}> Ver detalles</button>
               </td>
             </tr>
           ))}
@@ -34,6 +34,5 @@ export const ProductList = ( { products, onProductClick } ) => {
       </table>
 
     </>
-  );
-};
-
+  )
+}

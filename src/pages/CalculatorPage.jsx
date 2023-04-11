@@ -5,7 +5,7 @@ import { Calculator } from '../components/calculator/Calculator'
 export const CalculatorPage = () => {
   return (
     <Layout>
-        <Calculator />
+      <Calculator />
     </Layout>
   )
 }

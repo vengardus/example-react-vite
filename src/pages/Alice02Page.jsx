@@ -5,7 +5,7 @@ import Alice02 from '../components/alice02/Alice02'
 export const Alice02Page = () => {
   return (
     <Layout>
-        <Alice02 />
+      <Alice02 />
     </Layout>
   )
 }

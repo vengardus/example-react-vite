@@ -5,7 +5,7 @@ import { Layout } from '../components/ui/Layout'
 export const GoalsPage = () => {
   return (
     <Layout>
-        <Goal />
+      <Goal />
     </Layout>
   )
 }

@@ -1,7 +1,7 @@
-import { useRef } from 'react';
+import { useRef } from 'react'
 
 const ProductDetail = ({ product, onBackToListClick }) => {
-  const imgRef = useRef(null);
+  const imgRef = useRef(null)
 
   return (
     <div>
@@ -12,7 +12,7 @@ const ProductDetail = ({ product, onBackToListClick }) => {
       <br />
       <button onClick={onBackToListClick}>Back to List</button>
     </div>
-  );
-};
+  )
+}
 
-export default ProductDetail;
+export default ProductDetail

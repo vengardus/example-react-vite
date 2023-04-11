@@ -1,5 +1,5 @@
-import { Footer } from '../portafolio/Footer'
-import { Navbar } from '../portafolio/Navbar'
+import { Footer } from './Footer'
+import { Navbar } from './Navbar'
 
 export const Layout = ({ children }) => {
   return (
@@ -7,7 +7,7 @@ export const Layout = ({ children }) => {
 
       <Navbar className='bg-gray-800' />
 
-      <main className='bg-gray-300 py-auto px-4'>
+      <main className='bg-gray-300 py-auto py-3 px-4'>
         {children}
       </main>
 

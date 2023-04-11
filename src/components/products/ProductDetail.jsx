@@ -1,4 +1,4 @@
-export const ProductDetail = ( { product, onBackToListClick } ) => {
+export const ProductDetail = ({ product, onBackToListClick }) => {
   console.log('detail', product)
   return (
     <div>
@@ -6,8 +6,7 @@ export const ProductDetail = ( { product, onBackToListClick } ) => {
       <p>{product?.description}</p>
       <p>{product?.price}</p>
       <img src={product?.thumbnail} alt={product.title} />
-      <button onClick={ onBackToListClick }>Volver al listado</button>
+      <button onClick={onBackToListClick}>Volver al listado</button>
     </div>
-  );
-};
-
+  )
+}
